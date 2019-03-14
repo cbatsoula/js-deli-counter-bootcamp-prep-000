@@ -1,10 +1,11 @@
 var katzDeli = [];
 
-function takeANumber(deliLine, name){
+  var placeInLine = 1
+function takeANumber(deliLine){
+  deliLine.push(placeInLine) 
+  placeInLine++
+  var outputString = "Welcome! You are "
   
-  var placeInLine = deliLine.length + 1;
-  var outputString = (`Welcome, ${name}. You are number ${placeInLine} in line.`);
-  deliLine.push(name);
   return outputString;
 }
 function nowServing(deliLine){
